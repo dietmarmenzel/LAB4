@@ -98,3 +98,13 @@ void loop() {
   Serial.print(voltaje2);
 
   Serial.print("\t");
+
+  Serial.print(decenas2);
+  Serial.print("\t");
+  Serial.print(unidades2);
+  Serial.print("\t");
+  Serial.println(decimal2);
+
+  Serial.print("\t");
+  Serial.println(ContadorBoton1);
+  
