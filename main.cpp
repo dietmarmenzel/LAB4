@@ -127,6 +127,33 @@ void loop() {
   LCD.print(unidades2);
   LCD.print(decimal2);
 
+  void Contador(void){
+
+    int b1 = digitalRead(boton1);
+    int b2 = digitalRead(boton2);
+
+    if (b1 == 0)
+    {
+      ContadorBoton1 = ContadorBoton1 + 1;
+      if (ContadorBoton1 > 255)
+
+      {
+        ContadorBoton1 = 0;
+      }
+    }
+    if (b2 == 0)
+    {
+      ContadorBoton1 = ContadorBoton1 - 1;
+      if (ContadorBoton1 < 0)
+
+      {
+        ContadorBoton1 = 255;
+      }
+
+    }
+  }
+  
+
   LCD.print (" ");
   LCD.print(ContadorBoton1);
   
