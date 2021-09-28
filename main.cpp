@@ -66,3 +66,11 @@ void setup() {
 //*****************************************************************************
 void loop() {
   Contador ();
+
+  voltaje1 = analogReadMilliVolts(pot1) / 10.0;
+  int temp = voltaje1; 
+  decenas = temp / 100.0;
+  temp = temp - decenas *100.0;
+  unidades = temp / 10.0;
+  temp = temp - unidades *10.0;
+  decimal = temp;
