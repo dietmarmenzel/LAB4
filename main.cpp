@@ -45,3 +45,18 @@ uint8_t decenas2, unidades2, decimal2;
 int adcRaw;
 float voltaje1;
 float voltaje2;
+
+//*****************************************************************************
+// Configuración
+//*****************************************************************************
+void setup() {
+  Serial.begin(115200);
+  //LCD_Init(rs, en, d4, d5, d6, d7);
+  // Initialize The LCD. Parameters: [ Columns, Rows ]
+  LCD.begin(16, 2);
+  // Clears The LCD Display
+  
+  pinMode(boton1, INPUT_PULLUP);
+  pinMode(boton2, INPUT_PULLUP);
+  
+}
