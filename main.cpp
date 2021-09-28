@@ -84,3 +84,17 @@ void loop() {
   unidades2 = temp2 / 10.0;
   temp2 = temp2 - unidades2 *10.0;
   decimal2 = temp2;
+
+  Serial.print(voltaje2);
+
+  Serial.print("\t");
+
+  Serial.print(decenas);
+  Serial.print("\t");
+  Serial.print(unidades);
+  Serial.print("\t");
+  Serial.println(decimal);
+
+  Serial.print(voltaje2);
+
+  Serial.print("\t");
