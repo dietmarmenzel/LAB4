@@ -37,3 +37,11 @@ void Contador(void);
 // Variables Globales
 //*****************************************************************************
 int ContadorBoton1 = 0; //Contador Boton en entero
+
+// Create An LCD Object. Signals: [ RS, EN, D4, D5, D6, D7 ]
+LiquidCrystal LCD(rs, en, d4, d5, d6, d7);
+uint8_t decenas, unidades, decimal;
+uint8_t decenas2, unidades2, decimal2;
+int adcRaw;
+float voltaje1;
+float voltaje2;
