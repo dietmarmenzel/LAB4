@@ -107,4 +107,31 @@ void loop() {
 
   Serial.print("\t");
   Serial.println(ContadorBoton1);
+
+  LCD.clear();
+  LCD.print("Vol1:");
+  LCD.print(" ");
+  LCD.print("Vol2:");
+  LCD.print(" ");
+  LCD.print("CPU:");
+
+  LCD.setCursor(1,1);
+  LCD.print(decenas);
+  LCD.print('.');
+  LCD.print(unidades);
+  LCD.print(decimal);
+  
+  LCD.print (" ");
+  LCD.print(decenas2);
+  LCD.print('.');
+  LCD.print(unidades2);
+  LCD.print(decimal2);
+
+  LCD.print (" ");
+  LCD.print(ContadorBoton1);
+  
+  delay(2);
+  
+}
+
   
